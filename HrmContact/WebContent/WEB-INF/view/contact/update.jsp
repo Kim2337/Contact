@@ -34,14 +34,14 @@ $(function selectGroup(){
 </head>
 <body>
 <h2>연락처 수정</h2>
-<form name="save" method="post">
+<form name="update" method="post">
 <table border="1" width="1000">
  <tr>
    <td colspan="4"> 
    
    <!-- 현재 그룹 목록을 select-option으로 선택할 수 있게...-->   
    <b> 그룹 : 
-   <select id="group" name="gname">
+   <select id="group" name="gnum">
      <option value="">그룹선택</option>
    </select>  </b><br>   
    <input type="hidden" name="num" value="${dto.num}">

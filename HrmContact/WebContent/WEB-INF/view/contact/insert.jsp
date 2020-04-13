@@ -43,8 +43,8 @@
 그룹  : <select id="group" name="gnum">
        <option  value="">그룹선택</option>
        </select> 
-</div>
 
+</div>
 <div>
 이름 : <input name="name" id="name" size="30" placeholder="이름을 입력하세요">
 </div>
@@ -60,6 +60,7 @@
 <div>
 전화번호 : <input name="phonenum" id="phonenum" size="30" placeholder="전화번호를 입력하세요">
 </div>
+
 <button type="button" id="btnSave">등록</button> 
 
 </form>

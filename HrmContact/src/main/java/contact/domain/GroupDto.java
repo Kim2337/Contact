@@ -3,6 +3,7 @@ package contact.domain;
 public class GroupDto {
 	int gnum;
 	String gname;
+	
 	public int getGnum() {
 		return gnum;
 	}

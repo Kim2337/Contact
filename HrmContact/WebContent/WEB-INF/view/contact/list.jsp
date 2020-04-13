@@ -33,7 +33,7 @@ $(document).ready(function(){
    </tr>
     <c:forEach var="contact" items="${list}">
   <tr>
-   <td></td>
+   <td>${contact.gname }</td>
      <td><a href="contact/view.do?num=${contact.num}">${contact.name}</a></td>
    <td>${contact.level }</td>
     <td>${contact.compname}</td>

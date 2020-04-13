@@ -122,7 +122,7 @@ public class ContactController {
 	@RequestMapping(value="contact/contact/contact/gwrite.do", method = RequestMethod.POST)
 	public String writeGroup(@ModelAttribute GroupDto gdto) throws Exception {
 		gservice.ginsert(gdto);
-		return "redirect:/contact/list.do";
+		return "redirect:/contact/contact/glist.do";
 	}
 	
 	//그룹 수정 페이지로 이동 
@@ -135,14 +135,14 @@ public class ContactController {
 	@RequestMapping(value="contact/contact/contact/gupdate.do", method = RequestMethod.POST)
 	public String gupdate(@ModelAttribute GroupDto gdto) throws Exception {
 		gservice.gupdate(gdto);
-		return "redirect:/contact/list.do";
+		return "redirect:/contact/contact/glist.do";
 	}
 	
 	
 	//그룹 삭제 처리 
 	@RequestMapping(value="contact/contact/contact/gdelete.do", method = RequestMethod.GET)
 	public ModelAndView deleteGroup(@RequestParam int gnum) throws Exception{
-		ModelAndView mav = new ModelAndView("redirect:/contact/list.do");
+		ModelAndView mav = new ModelAndView("redirect:/contact/contact/glist.do");
 		gservice.gdelete(gnum);
 		return mav;
 	}

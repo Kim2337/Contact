@@ -11,13 +11,14 @@
 그런데 삭제를 누르면 그룹에 속한 사람도 다 지워야 하나????
  -->
  
- <h2>그룹정</h2>
+ <h2>그룹정보</h2>
 <form name="form1" method="post">
 <table border="1" width="1000">
  <tr>
    <td colspan="4"> 
-   <b> 그룹번호 : ${gdto.gnum}</b><br>
+  
    <b> 그룹이름 : ${gdto.gname}</b><br>
+    <b> 번호 : ${gdto.gnum}</b><br>
 </td>
  </tr>
  <tr>

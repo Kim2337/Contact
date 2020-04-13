@@ -27,7 +27,9 @@ where num = #{num}
 
 <!-- 연락처 자세히보기  -->
 <select id="read"  resultType="contact.domain.ContactDto">
-select * from contact where num = #{num}
+select name, gname, phonenum, level, email,compname, num, contact.gnum 
+from contact,cgroup 
+where contact.gnum = cgroup.gnum and num = #{num};
 </select>
 
 
@@ -62,7 +64,9 @@ delete from cgroup where gnum = #{gnum}
 
 <!-- 그룹 자세히 보기-->
 <select id="gread" resultType="contact.domain.GroupDto">
-select * from cgroup where gnum = #{gnum}
+select gname, gnum
+from cgroup 
+where gnum = #{gnum}
 </select>
 
 </mapper>

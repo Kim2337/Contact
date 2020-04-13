@@ -2,9 +2,15 @@ package contact.domain;
 
 public class ContactDto {
 	int num, gnum;
-	String name, level, compname, email, phonenum;
+	String name, level, compname, email, phonenum, gname;
 	
 	
+	public String getGname() {
+		return gname;
+	}
+	public void setGname(String gname) {
+		this.gname = gname;
+	}
 	public int getGnum() {
 		return gnum;
 	}
